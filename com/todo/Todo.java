@@ -25,6 +25,15 @@ public class Todo {
 
                 // use switch case method for checking
                 switch (userChoice) {
+                    case "1" -> {
+                        System.out.println("Adding new item.");
+                    }
+                    case "2" -> {
+                        System.out.println("Editing Item.");
+                    }
+                    case "3" -> {
+                        System.out.println("Deleting Item.");
+                    }
                     case "4" -> {
                         System.out.println("You are quitting the app");
                         isQuit = true;
