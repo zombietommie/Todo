@@ -1,10 +1,13 @@
 package com.todo;
 
+import com.actions.AddItem;
 import com.dispay.TodoDisplay;
 import java.util.Scanner;
 
 public class Todo {
     public static void main(String[] args) {
+
+        AddItem addItem = new AddItem();
 
         // display welcome once
         try (Scanner input = new Scanner(System.in)) {
@@ -27,6 +30,8 @@ public class Todo {
                 switch (userChoice) {
                     case "1" -> {
                         System.out.println("Adding new item.");
+                        String newItem = addItem.addItem();
+                        System.out.println("You have entered: " + newItem);
                     }
                     case "2" -> {
                         System.out.println("Editing Item.");
