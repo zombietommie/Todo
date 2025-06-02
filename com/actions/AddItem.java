@@ -5,15 +5,14 @@ package com.actions;
 import java.util.Scanner;
 
 public class AddItem {
-
-    String newItem;
-
-    Scanner input = new Scanner(System.in);
-
-    public String addItem() {
-
-        newItem = input.nextLine();
-        return newItem;
-
+    /**
+     * Prompts the user to enter a new to-do item and returns the input string.
+     * 
+     * @param scanner The Scanner instance to use for reading user input.
+     * @return The string entered by the user.
+     */
+    public static String getItemFromUser(Scanner scanner) {
+        System.out.print("Enter the new item: ");
+        return scanner.nextLine();
     }
 }
