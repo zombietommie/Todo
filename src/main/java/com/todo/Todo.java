@@ -9,7 +9,6 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 import src.main.java.com.actions.AddItem;
 import src.main.java.com.actions.DeleteItem;
 import src.main.java.com.dispay.TodoDisplay;
@@ -51,11 +50,11 @@ public class Todo {
                 }
                 case "2" -> {
                     System.out.println("Editing Item. (Not yet implemented)");
-                    DeleteItem.selectItemToDelete();
+
                 }
                 case "3" -> {
                     System.out.println("Deleting Item. (Not yet implemented)");
-                    // Future implementation: Delete an item
+                    DeleteItem.selectItemToDelete();
                 }
                 case "4" -> {
                     System.out.println("You are quitting the app. Goodbye!");
