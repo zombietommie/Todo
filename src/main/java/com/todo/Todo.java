@@ -1,7 +1,5 @@
-package com.todo;
+package src.main.java.com.todo;
 
-import com.actions.AddItem;
-import com.dispay.TodoDisplay;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -12,18 +10,19 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import src.main.java.com.actions.AddItem;
+import src.main.java.com.actions.DeleteItem;
+import src.main.java.com.dispay.TodoDisplay;
+
 public class Todo {
 
     private static List<String> todoItems = new ArrayList<>();
     private static final String DATA_FILE = "todolist.ser"; // File to store the to-do list
 
     public static void main(String[] args) {
-        // Load existing items from file at the start
         loadTodoList();
 
-        // Use one Scanner for menu input throughout the application's lifecycle
         Scanner userInputScanner = new Scanner(System.in);
-
         // display welcome once
         System.out.println("~~~~~~~~~~~~~~~Tommy's Todo~~~~~~~~~~~~~~~");
 
@@ -52,7 +51,7 @@ public class Todo {
                 }
                 case "2" -> {
                     System.out.println("Editing Item. (Not yet implemented)");
-                    // Future implementation: Edit an item
+                    DeleteItem.selectItemToDelete();
                 }
                 case "3" -> {
                     System.out.println("Deleting Item. (Not yet implemented)");

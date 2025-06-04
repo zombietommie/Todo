@@ -1,4 +1,4 @@
-package com.actions;
+package src.main.java.com.actions;
 
 // this action class is to add items to the to do list
 

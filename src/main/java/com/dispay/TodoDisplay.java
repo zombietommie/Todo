@@ -1,4 +1,4 @@
-package com.dispay;
+package src.main.java.com.dispay;
 
 public class TodoDisplay {
 
